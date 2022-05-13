@@ -1,0 +1,5 @@
+project: jacob-clemente/pacparser
+target: pacparser
+
+cmds:
+  - cmd: /pactester -p @@ -u google.com
