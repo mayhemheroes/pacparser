@@ -1,4 +1,4 @@
-project: jacob-clemente/pacparser
+project: pacparser
 target: pacparser
 
 cmds:
