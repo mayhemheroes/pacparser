@@ -1,0 +1,13 @@
+# Historical Mayhem target name preserved: pacparser/pacparser
+# (previously `pactester -p @@ -u google.com`, a raw file-input CLI; converted
+# to an in-process libFuzzer harness over the same PAC-parsing code path).
+project: pacparser
+target: pacparser
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pacparser/testsuite
+
+cmds:
+  - cmd: /mayhem/pacparser
+    libfuzzer: true
